@@ -1,0 +1,68 @@
+{
+  "doctype": "DocType",
+  "name": "MMOS Hetzner Node",
+  "module": "MMOS Hetzner",
+  "custom": 0,
+  "autoname": "field:node_id",
+  "fields": [
+    {
+      "fieldname": "node_id",
+      "fieldtype": "Data",
+      "label": "Node ID",
+      "reqd": 1
+    },
+    {
+      "fieldname": "account",
+      "fieldtype": "Link",
+      "label": "Hetzner Account",
+      "options": "MMOS Hetzner Account",
+      "reqd": 1
+    },
+    {
+      "fieldname": "server_type",
+      "fieldtype": "Select",
+      "label": "Server Type",
+      "options": "Cloud\nDedicated\nStorage",
+      "default": "Cloud"
+    },
+    {
+      "fieldname": "public_ip",
+      "fieldtype": "Data",
+      "label": "Public IP"
+    },
+    {
+      "fieldname": "role",
+      "fieldtype": "Select",
+      "label": "Role",
+      "options": "Gateway\nWorker\nStorage\nMonitor",
+      "default": "Worker"
+    },
+    {
+      "fieldname": "state",
+      "fieldtype": "Select",
+      "label": "State",
+      "options": "Active\nMaintenance\nOffline",
+      "default": "Active"
+    },
+    {
+      "fieldname": "last_seen",
+      "fieldtype": "Datetime",
+      "label": "Last Seen"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0,
+      "permlevel": 0
+    }
+  ],
+  "track_changes": 1,
+  "search_fields": "node_id,public_ip"
+}
