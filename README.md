@@ -21,6 +21,10 @@ bench --site dev.onekeyco.com migrate
 1. Apri `MMOS Hetzner Setup` e definisci il `Default Account`, `Project ID`, `API Token`, `Default Region` e `Monitoring Role`.
 2. Usa questi valori nei job che interrogano le Hetzner Cloud API (es. `hcloud server list`).
 
+## Dashboard rapida
+- Dal Desk apri il modulo "MMOS Hetzner" e seleziona **Setup Panel** oppure vai su `desk#mmos-hetzner-setup`.
+- Il pannello mostra i valori correnti (token, regione, ruolo) in card pronte da consultare prima di lanciare job.
+
 ## Operazioni tipiche
 1. Registra le API key/Project ID su `MMOS Hetzner Account`.
 2. Inserisci server e assegnali a `role` (`gateway`, `storage`, `monitor`).
