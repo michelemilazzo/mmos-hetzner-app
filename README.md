@@ -24,6 +24,7 @@ bench --site dev.onekeyco.com migrate
 ## Dashboard rapida
 - Dal Desk apri il modulo "MMOS Hetzner" e seleziona **Setup Panel** oppure vai su `desk#mmos-hetzner-setup`.
 - Il pannello mostra i valori correnti (token, regione, ruolo) in card pronte da consultare prima di lanciare job.
+- Usa il pulsante **Trigger sync now** per popolare il campo `Ultimo trigger` e segnalare che un job è partito.
 
 ## Operazioni tipiche
 1. Registra le API key/Project ID su `MMOS Hetzner Account`.

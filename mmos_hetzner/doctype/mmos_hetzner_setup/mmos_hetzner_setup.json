@@ -36,6 +36,13 @@
       "default": "Monitor"
     },
     {
+      "fieldname": "last_sync",
+      "fieldtype": "Datetime",
+      "label": "Ultimo trigger",
+      "read_only": 1,
+      "description": "Aggiornato quando premi il pulsante Trigger sync sulla Dashboard."
+    },
+    {
       "fieldname": "notes",
       "fieldtype": "Small Text",
       "label": "Notes"
