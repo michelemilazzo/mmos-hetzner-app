@@ -13,3 +13,4 @@ whitelisted_methods = [
     "mmos_hetzner.api.sync.list_nodes",
     "mmos_hetzner.api.sync.set_node_state",
 ]
+frappe_version = ">=15.0.0,<17.0.0"
